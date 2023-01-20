@@ -7,7 +7,7 @@ import {
   faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, HStack, Link } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -64,9 +64,12 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            
-          <FontAwesomeIcon icon="coffee" size="xs" />
-
+            <Link href="https://www.google.com.co/" isExternal></Link>
+            <Link><FontAwesomeIcon icon={faGithub} size="2x" /></Link>
+            <Link><FontAwesomeIcon icon={faLinkedin} size="2x" /></Link>
+            <Link><FontAwesomeIcon icon={faMedium} size="2x" /></Link>
+            <Link><FontAwesomeIcon icon={faEnvelope} size="2x" /></Link>
+            <Link><FontAwesomeIcon icon={faStackOverflow} size="2x" /></Link>
           </nav>
 
           <nav>
