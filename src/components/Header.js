@@ -64,17 +64,17 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            <Link href="https://www.google.com.co/" isExternal></Link>
-            <Link><FontAwesomeIcon icon={faGithub} size="2x" /></Link>
-            <Link><FontAwesomeIcon icon={faLinkedin} size="2x" /></Link>
-            <Link><FontAwesomeIcon icon={faMedium} size="2x" /></Link>
-            <Link><FontAwesomeIcon icon={faEnvelope} size="2x" /></Link>
-            <Link><FontAwesomeIcon icon={faStackOverflow} size="2x" /></Link>
+            <Link href="https://www.github.com" isExternal><FontAwesomeIcon icon={faGithub} size="2x" /></Link>
+            <Link href="https://www.linkedIn,com" isExternal><FontAwesomeIcon icon={faLinkedin} size="2x" /></Link>
+            <Link href="https://www.medium.com" isExternal><FontAwesomeIcon icon={faMedium} size="2x" /></Link>
+            <Link href="mailto: hello@example.com" isExternal><FontAwesomeIcon icon={faEnvelope} size="2x" /></Link>
+            <Link href="https://stackoverflow.com" isExternal><FontAwesomeIcon icon={faStackOverflow} size="2x" /></Link>
           </nav>
 
           <nav>
             <HStack spacing={8}>
-              {/* Add links to Projects and Contact me section */}
+              <a href="/#projects" onClick={handleClick("projects")}>Projects</a>
+              <a href="/#contactme" onClick={handleClick("contactme")}>Contact me</a>
             </HStack>
           </nav>
         </HStack>
