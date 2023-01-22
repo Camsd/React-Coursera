@@ -26,7 +26,7 @@ const LandingSection = () => (
            </Heading>
         </VStack>
 
-        <VStack spacing={6}>
+        <VStack spacing={3}>
           <Heading as="h1" size="xl" noOfLines={1}>
             {bio1}
           </Heading>
